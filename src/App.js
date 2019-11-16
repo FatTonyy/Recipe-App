@@ -3,7 +3,7 @@ import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
-import Recipe from "./pages/Recipe";
+import Recipe from "./pages/Recipes";
 import SingleRecipe from "./pages/SingleRecipe";
 import Default from "./pages/Default";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
