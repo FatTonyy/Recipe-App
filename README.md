@@ -26,3 +26,7 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `Food2Fork API`
+
+the idea was to use food2fork api but apparently it is shutting down so i need to build my personal database since local African dishes can hardly be found in foreign recipes API anyway
