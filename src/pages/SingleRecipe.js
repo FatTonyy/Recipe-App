@@ -8,9 +8,25 @@ export default class SingleRecipe extends Component {
     const id = this.props.match.params.id;
     this.state = {
       recipe: recipeData,
+      //todo when using a n api set recipe :{}, and loading to true
       id,
       loading: false
     };
+  }
+
+  // ! single recipe page ajax request  [always restart server when you set the key]
+  async componentDidMount() {
+    const url = `API goes in here key=${process.REACT_APP_API_KEY} &rId=${this.state.id}`;
+    try {
+      const response = await fetch(url);
+      const responseData = await response.json();
+      this.setState({
+        recipe: recipeData.recipe,
+        loading: false
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   render() {
